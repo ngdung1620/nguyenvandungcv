@@ -1,0 +1,53 @@
+<section class="wrap">
+  <app-nav-mobile [listItem]="listItemNav" *ngIf="isNavM"></app-nav-mobile>
+  <div class="nav-mobile">
+    <i (click)="isNav()" class="fas fa-bars mobile-icon"></i>
+  </div>
+  <app-nav-left [listItem]="listItemNav"></app-nav-left>
+  <section class="main-content">
+    <app-home></app-home>
+    <app-about></app-about>
+    <app-services></app-services>
+    <router-outlet></router-outlet>
+    <div class="together">
+      <div class="together-heading">
+        <h1 class="together-heading-title">Let's work together!</h1>
+        <h2 class="together-heading-des">I am available for freelance projects. Hire me and get your project done.</h2>
+      </div>
+      <div class="together-btn">
+        <button class="btn"><a href="#contact">Hire me</a></button>
+      </div>
+    </div>
+    <app-contact></app-contact>
+    <footer class="footer">
+      <div class="footer-contact">
+        <div class="footer__contact-list">
+          <i class="fas fa-map-marked-alt contact__icon"></i>
+          <h2 class="contact-title">Kim Thành, Hải Dương, Việt Nam</h2>
+        </div>
+        <div class="footer__contact-list">
+          <i class="fas fa-phone contact__icon"></i>
+          <h2 class="contact-title"> 0396819816 </h2>
+        </div>
+        <div class="footer__contact-list">
+          <i class="fas fa-paper-plane contact__icon"></i>
+          <h2 class="contact-title">ngdung34hd@gmail.com</h2>
+        </div>
+      </div>
+      <div class="footer-des">
+        <div class="footer-des-link">
+          <a href="https://github.com/ngdung1620" class="link-item"><i class="fab fa-github-square github"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100007731377196"class="link-item"><i class="fab fa-facebook-square facebook"></i></a>
+          <a href="" class="link-item"><i class="fab fa-instagram-square ins"></i></a>
+          <a href="" class="link-item"><i class="fab fa-linkedin linkd"></i></a>
+        </div>
+        <h1 class="footer-des-title">Copyright © 2022 CardX, all rights reserved. Developed by <span class="name">
+          Nguyễn Văn Dũng
+        </span>.
+        </h1>
+      </div>
+    </footer>
+  </section>
+</section>
+
+

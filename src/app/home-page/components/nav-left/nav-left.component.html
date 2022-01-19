@@ -1,0 +1,10 @@
+<aside class="left-nav" >
+  <div class="icon">
+    <img src="assets/img/img_1.png" alt="avatar" class="avatar">
+  </div>
+  <h2 class="name-author">Nguyễn Văn Dũng</h2>
+  <h3 class="des-author">Available For Work</h3>
+  <div class="link">
+    <a href="#{{item}}" routerLinkActive="active" (click)="handleClick(item)" [class.active]="targetedItem == item" class="link-item" *ngFor=" let item of listItem">{{item.charAt(0).toUpperCase()+ item.slice(1)}}</a>
+  </div>
+</aside>

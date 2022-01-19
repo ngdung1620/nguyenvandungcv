@@ -1,0 +1,53 @@
+.about {
+  @apply xl:mt-12 xl:px-12  mt-10 px-12 pb-20 xl:min-h-screen;
+  .about-heading {
+    .about-left-title {
+      @apply text-5xl font-black my-5;
+    }
+    .about-left-des {
+      @apply mb-12 text-base
+    }
+  }
+  .about-content {
+    @apply grid xl:grid-cols-3 xl:gap-8 grid-cols-1;
+    .about-content-left {
+      @apply col-span-1 border rounded border-slate-300 h-full;
+      .img-avatar {
+        @apply rounded p-1 h-full w-full;
+      }
+    }
+    .about-content-right {
+      @apply col-span-2 xl:px-14 flex justify-center flex-col;
+      .right-question {
+        @apply  text-2xl font-medium text-rose-600 my-4;
+      }
+      .right-intro {
+        @apply text-3xl font-extrabold mb-6;
+      }
+      .right-content {
+        @apply pb-6 border-b-2 border-b-gray-200
+      }
+      .content-infor {
+        @apply grid md:grid-cols-2 grid-cols-1;
+        .infor-item {
+          @apply mt-4 font-normal;
+          .infor-title {
+            @apply text-lg font-medium mr-2
+          }
+          .infor-email {
+            @apply text-red-600
+          }
+        }
+      }
+      .group-btn {
+        @apply my-8;
+        .btn {
+          @apply sm:py-3 sm:px-8 border rounded-3xl mr-4 shadow-md py-2 px-4;
+          &-color {
+            @apply bg-red-600 border-red-600 text-white;
+          }
+        }
+      }
+    }
+  }
+}

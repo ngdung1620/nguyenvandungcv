@@ -1,0 +1,22 @@
+.home {
+  @apply bg-cover min-h-screen ;
+  background-image: url("/assets/img/home.png");
+  .home-wrap {
+    @apply bg-black/[.70] w-full h-screen  flex justify-center items-center text-white flex-col relative;
+    .home-name-author {
+      @apply text-6xl font-black mb-6 text-center leading-normal;
+      .name {
+        @apply text-rose-700
+      }
+    }
+    .des-name {
+      @apply text-4xl font-medium;
+    }
+    .bounce {
+      @apply w-8 h-10 rounded-full bg-black border-2 border-white absolute bottom-7  cursor-pointer text-center;
+      .nhay{
+        @apply animate-bounce text-xs mt-2 ;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.contact {
+  @apply xl:min-h-screen md:py-20 md:px-14 px-4 py-6;
+  .contact-heading {
+    .heading-title {
+      @apply text-5xl font-black my-5;
+    }
+    .heading-des {
+      @apply text-base font-medium mb-12;
+    }
+  }
+  .form {
+    @apply grid md:grid-cols-2 gap-3 grid-cols-1;
+    .form-name {
+      @apply md:col-span-1;
+    }
+    .form-email {
+      @apply md:col-span-1;
+    }
+    .form-subject {
+      @apply md:col-span-2;
+    }
+    .form-message {
+      @apply md:col-span-2;
+    }
+  }
+  .btn {
+    @apply bg-red-600 rounded-3xl py-3 px-8 text-white font-medium shadow-lg;
+  }
+}

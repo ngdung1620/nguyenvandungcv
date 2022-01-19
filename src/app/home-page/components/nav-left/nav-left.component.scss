@@ -1,0 +1,32 @@
+//.left-nav-mobile {
+//  @apply top-0 left-0 right-0 bottom-0 z-10 block absolute bg-black flex justify-center items-center;
+//}
+.left-nav {
+  @apply h-full xl:bg-black/[.92] xl:flex justify-center items-center
+  text-white flex-col fixed hidden;
+  @media (min-width: 1280px) {
+    width: 235px;
+  }
+  .icon {
+    @apply w-3/6 my-6;
+    .avatar {
+      @apply rounded-full border-4 border-gray-200/[.40];
+    }
+
+  }
+  .name-author {
+    @apply text-xl font-bold my-3
+  }
+  .des-author {
+    @apply text-zinc-200/[.55] font-medium mb-8
+  }
+  .link {
+    @apply flex flex-col items-center;
+    .active {
+      @apply text-rose-600;
+    }
+    .link-item {
+      @apply xl:py-2 py-5 cursor-pointer font-semibold text-base hover:text-rose-600;
+    }
+  }
+}

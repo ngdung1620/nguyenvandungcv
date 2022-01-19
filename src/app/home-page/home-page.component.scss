@@ -1,0 +1,76 @@
+.wrap {
+  @apply h-full flex relative;
+  .nav-mobile {
+    @apply xl:hidden sm:text-5xl text-white z-10 text-3xl  sm:py-6 py-2 bg-black/[.60]
+    fixed top-0 left-0 right-0 text-right;
+    .mobile-icon {
+      @apply mr-5;
+    }
+  }
+  .main-content {
+    @apply h-full w-full;
+    @media (min-width: 1280px) {
+      margin-left: 235px;
+    }
+    .together {
+      @apply md:flex justify-between items-center py-10 px-8 bg-black/[.80] text-white;
+      .together-heading {
+        .together-heading-title {
+          @apply text-4xl font-bold py-4;
+        }
+        .together-heading-des {
+          @apply text-gray-400/[.80] text-base font-medium;
+        }
+      }
+      .together-btn {
+        @apply lg:mr-8 mt-3;
+        .btn {
+          @apply py-2 lg:px-10 px-6 bg-red-600 rounded-3xl text-lg hover:opacity-95;
+        }
+      }
+    }
+    .footer {
+      @apply bg-black w-full text-white py-10 px-4 font-medium text-lg;
+      .footer-contact {
+        @apply sm:flex justify-around py-16 mx-6 text-base text-gray-400 border-b ;
+        .footer__contact-list {
+          @apply text-center mb-4;
+          .contact__icon {
+            @apply text-4xl text-red-500 py-6;
+          }
+        }
+      }
+      .footer-des {
+        @apply xl:flex mx-6 justify-between px-6 py-4 items-center mt-10 text-center;
+        .footer-des-link {
+          @apply text-center mb-4 flex items-center justify-center;
+          i {
+            @apply mx-2 text-3xl ;
+          }
+          .github {
+            @apply text-purple-700;
+          }
+          .facebook {
+            @apply text-blue-600;
+
+          }
+          .ins {
+            @apply text-pink-600;
+          }
+          .linkd {
+            @apply text-blue-700
+          }
+        }
+        .footer-des-title {
+          @apply text-base text-gray-400;
+          .name {
+            @apply text-red-600;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
